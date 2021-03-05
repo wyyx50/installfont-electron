@@ -1,5 +1,26 @@
-installfont
+installfont-electron
 ===========
+
+Update method to electron apps to execute from an ASAR file which doesn't allow temp files inside it.
+
+Added options.overrideLocalFileDir
+
+This property is to a temp folder to extract and install fonts from.  It must be from outside be a folder outside the application's runtime directory.
+
+Example:
+
+```
+  let osTemp = require('os').tmpdir();
+  installFont(fullPath, function(err) {
+      if (err) {
+          console.error('unable to install font', err);
+          reject(err);
+      } else {
+          console.log('installed font', fullPath);
+          resolve();
+      }
+  }, {overrideLocalFileDir: osTemp});
+```
 
 Nodejs module for installing system fonts.
 This module is not tightly coupled to any specific font libraries or apis.

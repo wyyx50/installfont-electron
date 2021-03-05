@@ -1,6 +1,6 @@
 {
-  "name": "installfont",
-  "version": "0.0.12",
+  "name": "installfont-electron",
+  "version": "1.0.1",
   "description": "Super easy nodejs system font installation",
   "author": "Mat Silva <askmatsilva@gmail.com>",
   "contributors": [
@@ -15,10 +15,10 @@
   "main": "lib/installfont.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/matsilva/installfont"
+    "url": "https://github.com/SpecmoComptonJames/installfont"
   },
   "bugs": {
-    "url": "https://github.com/matsilva/installfont/issues"
+    "url": "https://github.com/SpecmoComptonJames/installfont"
   },
   "keywords": [
     "font",
