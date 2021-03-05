@@ -1,6 +1,6 @@
 {
   "name": "installfont-electron",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Super easy nodejs system font installation",
   "author": "Mat Silva <askmatsilva@gmail.com>",
   "contributors": [

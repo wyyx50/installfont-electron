@@ -39,12 +39,12 @@ It also is not opinionated about how you get the fonts on your machine.
 
 ### Installation
 
-Open your command line and run `npm install installfont`
+Open your command line and run `npm install installfont-electron`
 
 ### Usage
 *Installing a single font file*
 ```javascript
-var installfont = require('installfont');
+var installfont = require('installfont-electron');
 
 installfont('path/to/your/font.ttf', function(err) {
   if(err) console.log(err, err.stack);
@@ -57,7 +57,7 @@ installfont('path/to/your/font.ttf', function(err) {
 *Installing all font files within a specified directory*
 
 ```javascript
-var installfont = require('installfont');
+var installfont = require('installfont-electron');
 
 installfont('path/to/dir/containing/fonts', function(err) {
   if(err) console.log(err, err.stack);
@@ -71,7 +71,7 @@ installfont('path/to/dir/containing/fonts', function(err) {
 
 
 ```javascript
-var installfont = require('installfont');
+var installfont = require('installfont-electron');
 
 var options = {
   removeFonts: true
