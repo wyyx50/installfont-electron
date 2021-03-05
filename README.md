@@ -22,6 +22,29 @@ Example:
   }, {overrideLocalFileDir: osTemp});
 ```
 
+Must be unpacked from asar add to your config:
+
+```{
+"build": {
+    "appId": "YOURID",
+    "win": {
+    "target": "NSIS",
+    "asar": true,
+    "asarUnpack": [
+    " ./node_reports",
+    "./assets/fonts",
+    "./node_modules/installfont-electron",
+    ""
+    ]
+},
+"publish": {
+    "provider": "generic",
+    "url": "http://127.0.0.1"
+    }
+}
+}
+```
+
 Nodejs module for installing system fonts.
 This module is not tightly coupled to any specific font libraries or apis.
 It also is not opinionated about how you get the fonts on your machine.
